@@ -109,17 +109,23 @@ public class BigSmallTextView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
-        int bigTextWidth = mBigRect.width();//(int) mBigPaint.measureText(bigText);
-        int smallTextWidth = mSmallRect.width();//(int) mSmallPain.measureText(smallText);
+        int bigTextWidth =  (int) mBigPaint.measureText(bigText);
+        int smallTextWidth = (int) mSmallPain.measureText(smallText);
 
         //控件的实际宽高
         int realWidth = (int) (bigTextWidth + smallTextWidth + textOffset);
-        int realHeight = mBigRect.height() > mSmallRect.height() ? mBigRect.height() : mSmallRect.height();
+        int realHeight;
+        if (mBigRect.height() > mSmallRect.height()) {
+            realHeight = (int) (mBigRect.height() + mBigPaint.descent()+bigText_marginBottom+smallText_marginBottom);
+        } else {
+            realHeight = (int) (mSmallRect.height() + mSmallPain.descent()+bigText_marginBottom+smallText_marginBottom);
+        }
+
 
         int width = 0;
         int height = 0;
