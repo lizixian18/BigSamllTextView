@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BigSmallTextView">
+        <attr name="bigTextSize" format="dimension"/>
+        <attr name="smallTextSize" format="dimension"/>
+        <attr name="bigText" format="string"/>
+        <attr name="smallText" format="string"/>
+        <attr name="bigTextColor" format="color"/>
+        <attr name="smallTextColor" format="color"/>
+        <attr name="bigTextMarginBottom" format="dimension"/>
+        <attr name="smallTextMarginBottom" format="dimension"/>
+        <attr name="textOffset" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lzx.bigsmalltextview.MainActivity">
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bigText="11"
+        app:bigTextSize="40sp"
+        app:smallText="月，2015"
+        app:smallTextSize="20sp"/>
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:bigText="11"
+        app:bigTextSize="40sp"
+        app:smallText="月，2015"
+        app:smallTextMarginBottom="6dp"
+        app:smallTextSize="20sp"/>
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:bigText="11"
+        app:bigTextMarginBottom="10dp"
+        app:bigTextSize="40sp"
+        app:smallText="月，2015"
+        app:smallTextSize="20sp"/>
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:bigText="11"
+        app:bigTextColor="@color/colorPrimary"
+        app:bigTextSize="40sp"
+        app:smallText="月，2015"
+        app:smallTextColor="@color/colorAccent"
+        app:smallTextSize="20sp"/>
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:bigText="11"
+        app:bigTextSize="20sp"
+        app:smallText="月，2015"
+        app:smallTextSize="40sp"/>
+
+    <com.lzx.bigsmalltextview.BigSmallTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:bigText="11"
+        app:bigTextSize="40sp"
+        app:smallText="月，2015"
+        app:smallTextSize="20sp"
+        app:textOffset="50dp"/>
+
+
+</LinearLayout>
