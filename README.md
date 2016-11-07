@@ -2,6 +2,8 @@
 
 设置大小字体的View  
 
+有时候在项目中可能会做下面的效果，为了简便，所以搞了这个View。
+
 效果图：
 ![](art/view.png)
 
@@ -24,6 +26,8 @@
 - smallTextSize：右边 text 字体的大小，例：app:smallTextSize="16sp"
 
 - textOffset：设置左边和右边 text 之间的距离，例：app:textOffset="10dp"
+
+也可以在代码中使用 setXXX() 方法来设置。
 
 原则上控件的样式是左边的 text 大，右边的 text 小，但如果你愿意，也可以设置成左边的 text 小，右边的 text 大。
 
