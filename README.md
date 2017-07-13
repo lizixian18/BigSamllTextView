@@ -27,7 +27,17 @@
 
 - textOffset：设置左边和右边 text 之间的距离，例：app:textOffset="10dp"
 
-也可以在代码中使用 setXXX() 方法来设置。
+也可以在代码中使用 setXXX() 方法来设置。  
+例子：  
+```
+  mBigSmallTextView
+                .setBigTextSize(25)
+                .setSmallTextSize(16)
+                .setBigText("你")
+                .setSmallText("好");
+```
+代码中设置字体大小单位默认为 sp ，设置距离单位默认为 dp  。
+
 
 原则上控件的样式是左边的 text 大，右边的 text 小，但如果你愿意，也可以设置成左边的 text 小，右边的 text 大。
 
