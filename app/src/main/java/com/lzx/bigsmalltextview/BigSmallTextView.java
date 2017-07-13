@@ -86,7 +86,7 @@ public class BigSmallTextView extends View {
     }
 
     public BigSmallTextView setTextOffset(int textOffset) {
-        this.textOffset = textOffset;
+        this.textOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, textOffset, metrics);
         return this;
     }
 
