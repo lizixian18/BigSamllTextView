@@ -7,6 +7,22 @@
 效果图：
 ![](art/view.png)
 
+引用：
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  dependencies {
+	      compile 'com.github.lizixian18:BigSmallTextView:v1.0'
+	}
+```
+
+[![](https://jitpack.io/v/lizixian18/BigSmallTextView.svg)](https://jitpack.io/#lizixian18/BigSmallTextView)
+
 使用说明：
 
 | 方法 | 说明 | 示例 |
