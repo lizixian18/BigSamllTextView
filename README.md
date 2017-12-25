@@ -9,16 +9,16 @@
 
 引用：
 ```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+    }
+}
   
-  dependencies {
-	      compile 'com.github.lizixian18:BigSmallTextView:v1.0'
-	}
+dependencies {
+      compile 'com.github.lizixian18:BigSmallTextView:v1.0'
+}
 ```
 
 [![](https://jitpack.io/v/lizixian18/BigSmallTextView.svg)](https://jitpack.io/#lizixian18/BigSmallTextView)
